@@ -79,14 +79,15 @@ public class ForecastFragment extends Fragment {
         // Optional?
         // layout.setBackgroundColor(0x20FF0000);
 
-        ImageView image_view = new ImageView(getContext());
+//        ImageView image_view = new ImageView(getContext());
+//
+//        image_view.setImageResource(R.drawable.moist);
+//
+//
+//        layout.addView(text_view);
+//        layout.addView(image_view);
+        return inflater.inflate(R.layout.fragment_forecast, container, false);
 
-        image_view.setImageResource(R.drawable.moist);
-
-
-        layout.addView(text_view);
-        layout.addView(image_view);
-        return layout;
     }
 
 }
