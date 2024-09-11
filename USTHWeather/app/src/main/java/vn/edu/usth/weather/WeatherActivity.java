@@ -10,9 +10,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 
 public class WeatherActivity extends AppCompatActivity{
+    private ViewPager viewPager;
+    private PagerAdapter weatherPagerAdapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,17 +25,17 @@ public class WeatherActivity extends AppCompatActivity{
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_weather);
 
+        PagerAdapter adapter = new HomeFragmentPagerAdapter(
+                getSupportFragmentManager());
+        ViewPager pager = (ViewPager) findViewById(R.id.weather_pager);
+        pager.setOffscreenPageLimit(3);
+        pager.setAdapter(adapter);
+
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-//            // Create a new Fragment to be placed in the activity
-//            ForecastFragment firstFragment = new ForecastFragment();
-//
-//            // Add the fragment to the 'container' FrameLayout
-//            getSupportFragmentManager().beginTransaction().add(
-//                    R.id.main, firstFragment).commit();
-
             return insets;
         });
 
@@ -69,4 +74,5 @@ public class WeatherActivity extends AppCompatActivity{
 
 
 }
+
 
