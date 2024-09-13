@@ -13,6 +13,8 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.tabs.TabLayout;
+
 
 public class WeatherActivity extends AppCompatActivity{
     private ViewPager viewPager;
@@ -22,14 +24,18 @@ public class WeatherActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_weather);
+
 
         PagerAdapter adapter = new HomeFragmentPagerAdapter(
                 getSupportFragmentManager());
         ViewPager pager = (ViewPager) findViewById(R.id.weather_pager);
         pager.setOffscreenPageLimit(3);
         pager.setAdapter(adapter);
+
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab);
+        tabLayout.setupWithViewPager(pager);
+
 
 
 
