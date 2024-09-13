@@ -9,6 +9,7 @@
         android:id="@+id/weather_weather"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:name="vn.edu.usth.weather.WeatherFragment"
         tools:layout="@layout/fragment_weather"/>
     <androidx.fragment.app.FragmentContainerView
@@ -16,5 +17,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:name="vn.edu.usth.weather.ForecastFragment"
-        tools:layout="@layout/fragment_forecast"/>
+        tools:layout="@layout/fragment_forecast" />
 </LinearLayout>

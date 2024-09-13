@@ -14,12 +14,11 @@
         android:orientation="vertical"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
-        android:background="#DFDfFF">
+        android:layout_marginRight="35dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
             <TextView
                 android:layout_width="60dp"
@@ -33,27 +32,26 @@
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/moist"
+                android:src="@drawable/low_temp"
                 android:gravity="center"
                 android:layout_weight="1"/>
 
             <TextView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:layout_weight="4"
+                android:layout_gravity="center"
                 android:gravity="center"
-                android:layout_weight="5"
-                android:text="Really moist"
-                android:textSize="20dp"
-                />
+                android:text="Low temp \n 15C-18C" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
             <TextView
-                android:layout_width="65dp"
+                android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
                 android:gravity="center"
@@ -71,20 +69,19 @@
             <TextView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:layout_weight="4"
+                android:layout_gravity="center"
                 android:gravity="center"
-                android:layout_weight="5"
-                android:text="Really low temp"
-                android:textSize="20dp"
-                />
+                android:text="Low temp \n 15C-18C" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
             <TextView
-                android:layout_width="65dp"
+                android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
                 android:gravity="center"
@@ -95,24 +92,23 @@
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/high_temp"
+                android:src="@drawable/low_temp"
                 android:gravity="center"
                 android:layout_weight="1"/>
 
             <TextView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:layout_weight="4"
+                android:layout_gravity="center"
                 android:gravity="center"
-                android:layout_weight="5"
-                android:text="Really high temp"
-                android:textSize="20dp"
-                />
+                android:text="Low temp \n 15C-18C" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
             <TextView
                 android:layout_width="60dp"
@@ -126,27 +122,26 @@
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/wind"
+                android:src="@drawable/low_temp"
                 android:gravity="center"
                 android:layout_weight="1"/>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:layout_weight="4"
+                android:layout_gravity="center"
                 android:gravity="center"
-                android:layout_weight="5"
-                android:text="Really windy"
-                android:textSize="20dp"
-                />
+                android:text="Low temp \n 15C-18C" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
             <TextView
-                android:layout_width="65dp"
+                android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
                 android:gravity="center"
@@ -157,18 +152,17 @@
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_weight="1"
+                android:src="@drawable/low_temp"
                 android:gravity="center"
-                android:src="@drawable/weather" />
+                android:layout_weight="1"/>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:layout_weight="4"
+                android:layout_gravity="center"
                 android:gravity="center"
-                android:layout_weight="5"
-                android:text="Really sunny"
-                android:textSize="20dp"
-                />
+                android:text="Low temp \n 15C-18C" />
 
         </LinearLayout>
 

@@ -1,44 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#99FFCC"
     tools:context=".WeatherFragment"
     android:id="@+id/weather">
 
     <!-- TODO: Update blank fragment layout -->
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="#99FFCC"
-        android:layout_margin="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12C\nCloudy"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true">
 
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:text="12C"
-            android:textSize="20dp"
-            android:layout_alignParentLeft="true">
+    </TextView>
 
-        </TextView>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:src="@drawable/wind">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/wind">
 
 
-        </ImageView>
+    </ImageView>
 
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:text="Paris"
-            android:textSize="20dp"
-            android:layout_alignParentRight="true"/>
-    </RelativeLayout>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="Paris"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"/>
 
 
-</LinearLayout>
+</RelativeLayout>
