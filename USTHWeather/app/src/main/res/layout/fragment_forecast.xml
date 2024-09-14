@@ -42,7 +42,7 @@
                 android:layout_weight="4"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="Low temp \n 15C-18C" />
+                android:text="@string/temp" />
 
         </LinearLayout>
 
@@ -72,7 +72,8 @@
                 android:layout_weight="4"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="Low temp \n 15C-18C" />
+                android:text="@string/temp"
+                />
 
         </LinearLayout>
 
@@ -102,7 +103,7 @@
                 android:layout_weight="4"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="Low temp \n 15C-18C" />
+                android:text="@string/temp" />
 
         </LinearLayout>
 
@@ -132,7 +133,7 @@
                 android:layout_weight="4"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="Low temp \n 15C-18C" />
+                android:text="@string/temp" />
 
         </LinearLayout>
 
@@ -162,7 +163,7 @@
                 android:layout_weight="4"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="Low temp \n 15C-18C" />
+                android:text="@string/temp" />
 
         </LinearLayout>
 

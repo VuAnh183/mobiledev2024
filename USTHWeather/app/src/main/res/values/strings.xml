@@ -2,4 +2,6 @@
     <string name="app_name">USTH Weather</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="temp" translatable="true">Low temperature\n15C-18C</string>
+    <string name="weather" translatable="true">12C\nCloudy</string>
 </resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">USTH Weather</string>
+    <string name="temp" translatable="true">Nhiệt độ thấp\n15C-18C</string>
+    <string name="weather" translatable="true">12C\nNhiều mây</string>
+</resources>
